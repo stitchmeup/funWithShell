@@ -1,0 +1,52 @@
+sending incremental file list
+rsync: link_stat "/home/mika/lab/bash/BBG/7.chap/ssh" failed: No such file or directory (2)
+directory has vanished: "/home/mika/lab/bash/BBG/7.chap/2.exercice.bak/BBG/test"
+*deleting   BBG/test/
+.d..t...... BBG/
+*deleting   BBG/7.chap/2.exercice.bak/BBG/test/hello
+<f.st...... BBG/7.chap/2.exercice.log
+.d..t...... BBG/7.chap/2.exercice.bak/BBG/7.chap/
+<f.st...... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.log
+<f.st...... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.sh
+<f.st...... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.log
+.d..t...... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/
+<f.st...... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.log
+.d..t...... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/
+.d..tp..... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/1.exercice.sed
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/2.exercice.sed
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/example
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/example.EDIT.html
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/script.sed
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/tmp
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/tmp2
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/txt2html.sh
+.d..tp..... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/1.exercice.awk
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/2.exercice.sh
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/3.exercice.awk
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/3.exercice.sh
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/diskrep.awk
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/empty.txt
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/printnames.awk
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/tmp
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/tmp.1.exercice
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/tmp.2.exercice
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/tmp.3.exercice
+.d..tp..... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/1.exercice.sh
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.log
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.sh
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/root_test.sh
+cd+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/
+cd+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/
+cd+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/5.chap/
+cd+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/6.chap/
+cd+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/
+cd+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/test/
+<f+++++++++ BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/test/hello
+.d..t...... BBG/7.chap/2.exercice.bak/BBG/7.chap/2.exercice.bak/BBG/test/
+
+sent 17,122 bytes  received 744 bytes  35,732.00 bytes/sec
+total size is 47,496  speedup is 2.66
+rsync warning: some files vanished before they could be transferred (code 24) at main.c(1189) [sender=3.1.3]

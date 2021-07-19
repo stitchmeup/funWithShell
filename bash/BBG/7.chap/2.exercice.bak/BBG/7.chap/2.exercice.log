@@ -1,0 +1,6 @@
+sending incremental file list
+rsync: link_stat "/home/mika/lab/bash/BBG/7.chap/ssh" failed: No such file or directory (2)
+directory has vanished: "/home/mika/lab/bash/BBG/7.chap/2.exercice.bak/BBG/test"
+*deleting   BBG/test/
+.d..t...... BBG/
+*deleting   BBG/7.chap/2.exercice.bak/BBG/test/hello

@@ -1,0 +1,158 @@
+#!/bin/bash
+
+# Simple web browser (text mode) using wget and elinks
+# Displays HTML pages
+
+### VARIABLES DECLARATIONS ###
+declare -r myname='simple_web_browser'
+declare -r myver='0.9'
+
+declare -a OPTIONS_LIST=("Enter an URL" "Quit" "Previous" "History")
+declare -a URLS_LIST
+declare -i BACK=2 # Number of times user went back+2.
+#declare -a URLS_LIST=("url0" "url1" "url2" "url3" "url4" "url5" "url6" "url7")
+
+
+### FUNCTIONS ###
+usage(){
+    echo ${myname}$myver
+    echo
+    echo "Simple web browser (text mode) using elinks."
+    echo "Display HTML pages in a static way."
+    echo
+    echo "Requires: elinks"
+    echo
+    echo "Usage: ${myname} [URL]"
+}
+
+
+err(){
+    echo "ERROR: $1" >&2
+}
+
+errnexit(){
+    err "$1"
+    usage
+    exit 1
+}
+
+# Checks whether it is a valid url or not (only checks if there is blanks).
+#/!\ could be checked with a simple ping /!\
+isURL(){
+    [[ "$URL" = "${URL%[[:space:]]*}" ]] || return 1
+}
+
+# Checks if string is in array
+#/!\ Using array[*] as second param expands to one parameter and avoids shift and ("$@") /!\ -- DONE
+isInArray(){
+    declare -a array=("$2")
+    for i in ${array[@]}; do
+        [ "$1" = "$i" ] && return 0
+    done
+    return 1
+}
+
+
+# Asks user to enter a valid URL (valid according to isURL)
+enter_url(){
+    BACK=2
+    read -r -p "Enter an URL: " URL
+    until [ "$URL" ] && isURL "$URL"; do echo "Invalid URL." >&2; read -r -p "Enter an URL: " URL; done
+    echo "$URL"
+}
+
+# Goes to the requested HTML Page
+go_to_url(){
+    history_content
+    elinks -dump "$URL"
+    read -p "Press any key to continue..." -n 1 -s
+    echo
+}
+
+# Goes BACK to the previous HTML page
+go_back(){
+    # /!\ loop through the whole history because array[-1] exists /!\
+    URL="${URLS_LIST[$((${#URLS_LIST[@]}-$BACK))]:=$URL}"
+    ((BACK++))
+    go_to_url
+}
+
+# Simple history implementation
+# /!\ Something smarter and cleaner could be done here /!\
+# Shows current history (ten last visited web pages) and allows user to select a link to go
+history_select(){
+    BACK=2
+    select URL in ${URLS_LIST[@]}; do
+        isInArray "$URL" "${URLS_LIST[*]}" || continue
+        # Makes a rotation of history, starting from position selected
+        declare -i position=0
+        for urls in "${URLS_LIST[@]}"; do
+            [ "$urls" = "$URL" ] && break
+            ((position++))
+        done
+        for (( array_pos=$position; array_pos<${#URLS_LIST[@]}; array_pos++ )); do
+            URLS_LIST[$array_pos]=${URLS_LIST[$(($array_pos+1))]}
+        done
+        URLS_LIST[$array_pos]="$URL"
+        #
+        go_to_url && break
+    done
+}
+
+# Manages history content
+history_content(){
+    isInArray "$URL" "${URLS_LIST[*]}" && return 0
+    if [ ${#URLS_LIST[@]} -lt 10 ]; then
+        URLS_LIST+=("$URL")
+    else
+        # Makes a rotation of history
+        for array_pos in {0..8} ; do
+            URLS_LIST[$array_pos]=${URLS_LIST[$(($array_pos+1))]}
+        done
+        URLS_LIST[9]="$URL"
+        #
+        echo "$URLS_LIST[@]"
+    fi
+}
+
+
+### SANITY CHECKS && ARGUMENT PARSING ###
+[ $# -gt 1 ] && errnexit "Too many args."
+URL="${1:-$(enter_url)}"
+if isURL "$URL"; then
+    URLS_LIST+=("$URL")
+else
+    err "Invalid URL."
+    enter_url
+fi
+
+
+### MAIN ###
+go_to_url "$URL"
+
+while true; do
+    for i in ${!OPTIONS_LIST[@]}; do
+        echo "$(($i+1)) : ${OPTIONS_LIST[$i]}"
+    done
+    read -r -p "What do you want to do? [1 to $(($i+1)) ] " OPTION
+    case $OPTION in
+        "1")
+            URL=""
+            enter_url
+            go_to_url
+            ;;
+        "2")
+            echo "Exiting..."
+            exit
+            ;;
+        "3")
+            go_back
+            ;;
+        "4")
+            history_select
+            ;;
+        *)
+            err "Please, enter a valid choice."
+            ;;
+    esac
+done

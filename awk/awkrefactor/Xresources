@@ -1,0 +1,67 @@
+! ============
+!   Couleurs
+! ============
+*secondary:  #5E6386
+*active:     #C0C7D4
+
+nord0: #2A2D3D
+nord1: #3B4252
+nord2: #434C5E
+nord3: #4C566A
+nord4: #D8DEE9
+nord5: #E5E9F0
+nord6: #ECEFF4
+nord7: #8FBCBB
+nord8: #88C0D0
+nord9: #81A1C1
+nord10: #5E81AC
+nord11: #EE6174
+nord12: #D08770
+nord13: #F8CD7A
+nord14: #CAE797
+nord15: #BF94E5
+
+*.foreground:   #D8DEE9
+*.background:   #2A2D3D
+*.cursorColor:  #D8DEE9
+*fading: 20
+*fadeColor: #4C566A
+
+*.color0: #3B4252
+*.color1: #EE6174
+*.color2: #CAE797
+*.color3: #F8CD7A
+*.color4: #81A1C1
+*.color5: #BF94E5
+*.color6: #88C0D0
+*.color7: #E5E9F0
+*.color8: #4C566A
+*.color9: #EE6174
+*.color10: #CAE797
+*.color11: #F8CD7A
+*.color12: #81A1C1
+*.color13: #BF94E5
+*.color14: #8FBCBB
+*.color15: #ECEFF4
+
+! ===================
+!         rofi
+! ===================
+
+rofi.fullscreen: true
+rofi.color-enabled: true
+rofi.color-window: argb:e8222D32,argb:00292f37,#EBCB8B
+rofi.color-normal: argb:02000000,#D8DEE9,argb:02000000,argb:02000000,#EBCB8B
+rofi.color-active: argb:02000000,#D8DEE9,argb:02000000,argb:02000000,#D8DEE9
+rofi.color-urgent: argb:02000000,#D8DEE9,argb:02000000,argb:02000000,#D8DEE9
+
+rofi.font: System San Francisco Display 14
+rofi.eh: 1
+rofi.line-margin: 20
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.lines: 3
+rofi.width: 100
+rofi.padding: 200
+rofi.bw: 0
+rofi.show-icons: true

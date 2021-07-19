@@ -1,0 +1,2 @@
+sending incremental file list
+rsync: link_stat "/home/mika/lab/bash/BBG/7.chap/ssh" failed: No such file or directory (2)

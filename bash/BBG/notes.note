@@ -1,0 +1,10 @@
+Bash Guide for Beginners
+
+Reserved variables                  p.39        3.2.4 Reserved variables
+Special parameters                  p.42        3.2.5 Special parameters
+Shell expansion                     p.46        3.4 Shell expansion
+Artitmetic expansion                p.49        3.4.6 Arithmetic expansion
+Regular expression                  p.56        4.1.2 Regulare expression metacharacters
+Primary expressions                 p.79        7.1.1.1 Expressions used with if
+Redirection and file descriptors    p.99        8.2.3 Redirection and file descriptors
+File input and output               p.101       8.2.4 File input and output

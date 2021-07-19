@@ -1,0 +1,26 @@
+sending incremental file list
+rsync: link_stat "/home/mika/lab/bash/BBG/7.chap/ssh" failed: No such file or directory (2)
+cd+++++++++ BBG/
+cd+++++++++ BBG/5.chap/
+<f+++++++++ BBG/5.chap/1.exercice.sed
+<f+++++++++ BBG/5.chap/2.exercice.sed
+<f+++++++++ BBG/5.chap/example
+<f+++++++++ BBG/5.chap/example.EDIT.html
+<f+++++++++ BBG/5.chap/script.sed
+<f+++++++++ BBG/5.chap/tmp
+<f+++++++++ BBG/5.chap/tmp2
+<f+++++++++ BBG/5.chap/txt2html.sh
+cd+++++++++ BBG/6.chap/
+<f+++++++++ BBG/6.chap/1.exercice.awk
+<f+++++++++ BBG/6.chap/2.exercice.sh
+<f+++++++++ BBG/6.chap/3.exercice.awk
+<f+++++++++ BBG/6.chap/3.exercice.sh
+<f+++++++++ BBG/6.chap/diskrep.awk
+<f+++++++++ BBG/6.chap/empty.txt
+<f+++++++++ BBG/6.chap/printnames.awk
+<f+++++++++ BBG/6.chap/tmp
+<f+++++++++ BBG/6.chap/tmp.1.exercice
+<f+++++++++ BBG/6.chap/tmp.2.exercice
+<f+++++++++ BBG/6.chap/tmp.3.exercice
+cd+++++++++ BBG/7.chap/
+<f+++++++++ BBG/7.chap/1.exercice.sh

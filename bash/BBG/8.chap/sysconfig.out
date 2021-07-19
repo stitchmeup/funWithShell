@@ -1,0 +1,7 @@
+Your root account info:
+root:x:0:0::/root:/bin/bash
+>> Comment 1 <<
+Your local host configuration:
+127.0.0.1 localhost 
+::1 localhost 
+>> Comment 2 <<

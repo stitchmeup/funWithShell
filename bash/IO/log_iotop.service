@@ -1,0 +1,10 @@
+[Unit]
+Description=Log iotop output
+Requires=display-manager.service
+After=display-manager.service
+
+[Service]
+ExecStart=/home/mika/lab/bin/log_iotop
+
+[Install]
+WantedBy=graphical.target
