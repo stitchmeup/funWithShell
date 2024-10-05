@@ -75,7 +75,7 @@ done
 # sometimes, we have to launch xrandr before to make following command work
 xrandr 1>/dev/null 2>&1
 if [[ ${monitor[1]} ]]; then
-    xrandr --output ${monitor[1]} --${pos}-of ${monitor[0]} --auto
+    xrandr --output ${monitor[1]} --${pos}-of ${monitor[0]} --set audio auto --auto
 else
     xrandr --auto
 fi
